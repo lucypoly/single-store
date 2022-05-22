@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanilla JavaScript Todo App</title>
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/custom-select.css">
+    <link rel="stylesheet" href="styles/custom-radio.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+</head>
+    <body class="container">
+        <header class="header">
+            <a href="index.html">
+                <img class="logo" src="../../images/logo.svg" alt="logo">
+            </a>
+        </header>
+        <form id="demo" class="form" novalidate>
+            <div class="icon-wrapper">
+                <span class="icon"><i class="fa-regular fa-calendar-days"></i></span>
+            </div>
+            <h1 class="heading">Book a Demo</h1>
+            <p class="text info">Help us customize your demo by answering the following questions below.</p>
+            <div>
+                <label class="label" for="email">Business Email</label>
+                <input type="email" id="email" class="email" placeholder="Enter your business email">
+                <p id="error" class="error"></p>
+            </div>
+            <label class="label" for="size">Business Size</label>
+            <details>
+                <summary>
+                    <input type="radio" class="select" name="radio-select" id="size" title="Select size" checked>
+                    <input type="radio" class="select" name="radio-select" id="radio-select1" title="1-10" value="1">
+                    <input type="radio" class="select" name="radio-select" id="radio-select2" title="11-50" value="11">
+                    <input type="radio" class="select" name="radio-select" id="radio-select3" title="50-100" value="50">
+                    <input type="radio" class="select" name="radio-select" id="radio-select4" title="101-250" value="101">
+                    <input type="radio" class="select" name="radio-select" id="radio-select5" title="250-1000" value="250">
+                    <input type="radio" class="select" name="radio-select" id="radio-select6" title="1000+" value="1000">
+                </summary>
+                <ul>
+                    <li><label for="radio-select1" class="select-label">1-10</label></li>
+                    <li><label for="radio-select2" class="select-label">11-50</label></li>
+                    <li><label for="radio-select3" class="select-label">50-100</label></li>
+                    <li><label for="radio-select4" class="select-label">101-250</label></li>
+                    <li><label for="radio-select5" class="select-label">250-1000</label></li>
+                    <li><label for="radio-select6" class="select-label">1000+</label></li>
+                </ul>
+            </details>
+            <label class="label" for="analytics">What is the most important thing to you in a solution?</label>
+            <div class="radios">
+                <div class="column">
+                    <label class="radio-container" for="analytics">Real-time Analytics
+                        <input type="radio" id="analytics" name="important" value="analytics">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="radio-container" for="time">Query Response Time
+                        <input type="radio" id="time" name="important" value="time">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="radio-container" for="concurrency">High Concurrency
+                        <input type="radio" id="concurrency" name="important" value="concurrency">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="radio-container" for="ingest">Fast Data Ingest
+                        <input type="radio" id="ingest" name="important" value="ingest">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div class="column">
+                    <label class="radio-container" for="scalability">Scalability
+                        <input type="radio" id="scalability" name="important" value="scalability">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="radio-container" for="storage">Document Storage
+                        <input type="radio" id="storage" name="important" value="storage">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="radio-container" for="search">Full Text Search
+                        <input type="radio" id="search" name="important" value="search">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="radio-container" for="price">Price
+                        <input type="radio" id="price" name="important" value="price">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+            </div>
+            <button type="submit" class="button">Continue to Schedule a Time <i class="fa-solid fa-arrow-right"></i></button>
+        </form>
+        <script type="text/javascript" src="app.js"></script>
+    </body>
+</html>
