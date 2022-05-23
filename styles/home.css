@@ -81,3 +81,14 @@ input[name="important"] {
     cursor: pointer;
 }
 
+.button:hover, .button:focus {
+    background: #AA00FF;
+    -webkit-transform: translateY(-1px);
+    transform: translateY(-1px);
+}
+
+.button:active {
+    background: #8800CC;
+}
+
+
